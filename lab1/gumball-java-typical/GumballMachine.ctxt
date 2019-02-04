@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=GumballMachine
+comment1.params=size\ type
+comment1.target=GumballMachine(int,\ int)
+comment2.params=size
+comment2.target=void\ addGumballs(int)
+comment3.params=coin
+comment3.target=void\ insertCoin(int)
+comment4.params=coin
+comment4.target=boolean\ isQuarter(int)
+comment5.params=coin
+comment5.target=boolean\ isNickel(int)
+comment6.params=coin
+comment6.target=boolean\ isDime(int)
+comment7.params=
+comment7.target=void\ turnCrank()
+numComments=8
