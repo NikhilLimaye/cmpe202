@@ -74,23 +74,20 @@ public class GumballMachine
     {
         if(this.num_gumballs > 0 && this.value_inserted >= gumball_cost)
         {
-            switch(machine_type)
+            System.out.println("For Gumball Machine Type "+machine_type);
+            System.out.println("Value inserted "+value_inserted);
+            this.num_gumballs--;
+            this.value_inserted = this.value_inserted - this.gumball_cost;
+            System.out.println("Value remaining "+value_inserted);
+            System.out.println(this.gumball_cost+" cents received. Gumball ejected");
+            if(this.value_inserted > 0)
             {
-                case 1: System.out.println("For Gumball Machine Type "+machine_type);
-                        System.out.println("Value inserted "+value_inserted);
-                        this.num_gumballs--;
-                        this.value_inserted = this.value_inserted - this.gumball_cost;
-                        System.out.println("Value remaining "+value_inserted);
-                        System.out.println("Quarter received. Gumball ejected");
-                        if(this.value_inserted > 0)
-                        {
-                            System.out.println("Ejecting change - "+this.value_inserted);
-                            this.value_inserted = 0;
-                            System.out.println("Gumballs remaining "+this.num_gumballs);
-                        }
-                        break;
-            }
+                System.out.println("Ejecting change - "+this.value_inserted+" cents");
+                this.value_inserted = 0;
+                System.out.println(this.num_gumballs+" gumballs remaining");
+            }  
         }
+       
         else if (this.num_gumballs == 0)
             System.out.println("No gumballs remaining. Be right back");
         else if (this.value_inserted < gumball_cost)
