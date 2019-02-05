@@ -74,11 +74,11 @@ public class GumballMachine
     {
         if(this.num_gumballs > 0 && this.value_inserted >= gumball_cost)
         {
-            System.out.println("For Gumball Machine Type "+machine_type);
+            //System.out.println("For Gumball Machine Type "+machine_type);
             System.out.println("Value inserted "+value_inserted);
             this.num_gumballs--;
             this.value_inserted = this.value_inserted - this.gumball_cost;
-            System.out.println("Value remaining "+value_inserted);
+            //System.out.println("Value remaining "+value_inserted);
             System.out.println(this.gumball_cost+" cents received. Gumball ejected");
             if(this.value_inserted > 0)
             {

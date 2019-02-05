@@ -4,8 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         
-        //Testing for Gumball Machine of type 1
-        /*
+        System.out.println("\n**************Testing for Gumball Machine Type 1**************\n");
         GumballMachine gumballMachine = new GumballMachine(1,1);
   
         gumballMachine.insertCoin( 25 ); 
@@ -17,25 +16,40 @@ public class Main {
         gumballMachine.insertCoin( 25 );
         gumballMachine.turnCrank(); // Insufficient gumballs
         
-        gumballMachine.addGumballs(5);
-        gumballMachine.insertCoin( 25 );
-        gumballMachine.turnCrank();
-        */
+        gumballMachine.addGumballs(5); 
+        gumballMachine.turnCrank(); //Successfully ejected
+        
+        System.out.println("\n**************Testing for Gumball Machine Type 2**************\n");
+        
+        GumballMachine gumballMachine2 = new GumballMachine(2,2);
+  
+        gumballMachine2.insertCoin( 25 );        
+        gumballMachine2.turnCrank(); //Insufficient money inserted
+        
+        gumballMachine2.insertCoin( 25 );
+        gumballMachine2.turnCrank(); // Successfully ejected
+        
+        gumballMachine2.insertCoin(5); // Invalid coin type
+        
+        
 
-        //Testing for Gumball Machine Type 2
-        GumballMachine gumballMachine = new GumballMachine(5,3);
-        gumballMachine.insertCoin( 10 );
-        gumballMachine.insertCoin( 5 );
-        gumballMachine.insertCoin( 25 );
-        gumballMachine.insertCoin( 10 );
-        gumballMachine.turnCrank();
+        System.out.println("\n**************Testing for Gumball Machine Type 3**************\n");
+        GumballMachine gumballMachine3 = new GumballMachine(5,3);
+        gumballMachine3.insertCoin( 10 );
+        gumballMachine3.insertCoin( 5 );
+        gumballMachine3.insertCoin( 25 );
+        gumballMachine3.insertCoin( 10 );
+        gumballMachine3.turnCrank();  //Successfully ejected
         
         System.out.println();
         
-        gumballMachine.insertCoin(10);
-        gumballMachine.insertCoin( 25 );
-        gumballMachine.insertCoin( 25 );
-        gumballMachine.insertCoin( 25 );
-        gumballMachine.turnCrank();
+        gumballMachine3.insertCoin(10);
+        gumballMachine3.insertCoin( 25 );
+        gumballMachine3.turnCrank();  //Falling short of 15 cents
+
+        gumballMachine3.insertCoin( 25 );
+        gumballMachine3.turnCrank(); //Successfully ejected with change returned 10 cents
+        
+
     }
 }
