@@ -34,7 +34,7 @@ public class InsufficientMoneyState implements State {
 			gumballMachine.setMoneyInserted(0);
 		}
 		else
-			System.out.println("You can't eject, you haven't inserted a quarter yet");
+			System.out.println("You can't eject, you haven't inserted any coins yet");
 
 	}
  
