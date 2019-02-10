@@ -23,7 +23,7 @@ public class InsufficientMoneyState implements State {
 				gumballMachine.setState(gumballMachine.getSufficientMoneyState());	
 		}
 		else
-			System.out.println("Invalid Coin type");
+			System.out.println("Coin of value "+value+" is invalid for this machine. Ejecting..");
 	}
  
 	public void ejectCoin() {
@@ -33,6 +33,9 @@ public class InsufficientMoneyState implements State {
 			System.out.println("Ejecting "+gumballMachine.getMoneyInserted()+" cents");
 			gumballMachine.setMoneyInserted(0);
 		}
+		else
+			System.out.println("You can't eject, you haven't inserted a quarter yet");
+
 	}
  
 	public void turnCrank() {

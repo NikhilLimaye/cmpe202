@@ -100,7 +100,7 @@ public class GumballMachine {
 	}
  
 	void refill(int count) {
-		this.count = count;
+		this.count = getCount() + count;
 		state = insufficientMoneyState;
 	}
 

@@ -7,7 +7,7 @@ public class Main {
 
 		//System.out.println(gumballMachine);
 		
-		System.out.println("****Testing for gumball machine type 1****");
+		System.out.println("\n****Testing for gumball machine type 1****");
 		GumballMachine gumballMachine = new GumballMachine(5,1);
 		gumballMachine.insertCoin(25);
 		gumballMachine.turnCrank();
@@ -16,7 +16,7 @@ public class Main {
 		gumballMachine.insertCoin(4);
 		
 
-		System.out.println("****Testing for gumball machine type 2****");
+		System.out.println("\n****Testing for gumball machine type 2****");
 		GumballMachine gumballMachine2 = new GumballMachine(5,2);
 		gumballMachine2.insertCoin(10);
 		gumballMachine2.insertCoin(25);
@@ -25,7 +25,7 @@ public class Main {
 		gumballMachine2.turnCrank();
 
 		
-		System.out.println("****Testing for gumball machine type 3****");
+		System.out.println("\n****Testing for gumball machine type 3****");
 		GumballMachine gumballMachine3 = new GumballMachine(5,3);
 		gumballMachine3.insertCoin(10);
 		gumballMachine3.insertCoin(25);
