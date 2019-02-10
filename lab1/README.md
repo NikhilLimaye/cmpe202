@@ -14,5 +14,7 @@ Approaches -
 
 Working - 
 The user can initialize a gumball machine of any type by specifying it in the constructor - GumballMachine(int gumballCount, int machineType)
+
 If the customer calls turnCrank before the full amount is inserted  - An error will be displayed
+
 If the customer calls turnCrank with sufficient money inserted, any change remaining will be ejected along with the gumball
