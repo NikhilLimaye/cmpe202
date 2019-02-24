@@ -1,3 +1,5 @@
+Design Pattern used - Chain of Responsibility Design and Singleton patterns
+
 Lab4 : CRC Cards
 
 Class Client
@@ -14,6 +16,7 @@ Collaborators :
 
 Class WaitlistManager
 Responsibilities: 
+	Maintain single instance of WaitlistManager
 	Add a Client to the back of the waiting list
 	Remove particular client from the waiting list
 	Provide size of next available table
@@ -43,7 +46,6 @@ Responsibilities:
 	Find appropriate contender for currently available table
 	Get size of currently available table
 	Remove Client from waitlist 
-	Go to the next request Handler
 
 Collaborators: 
 	WaitlistManager
