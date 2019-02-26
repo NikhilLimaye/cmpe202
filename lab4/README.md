@@ -1,4 +1,4 @@
-Design Pattern used - Chain of Responsibility Design and Singleton patterns
+Design Pattern used - 1. Chain of Responsibility  2. Singleton
 
 Lab4 : CRC Cards
 
