@@ -1,6 +1,18 @@
-Design Pattern used - 1. Chain of Responsibility  2. Singleton
+Lab 4 Solution --  
+Design Patterns used --  
+1. Chain of Responsibility   
+Multiple classes or "handlers" can handle a request for assigning a table. 
+The appropriate client could be at the top of the list or somewhere down the queue.   
+Table Helper - Hanlder Interface  
+AssignCurrent - Concrete Handler 1  
+FindAndAssign - Concrete Handler 2  
 
-Lab4 : CRC Cards
+2. Singleton  
+Only a single instance of the waitlist needs to be existing  
+The Class WaitlistManager is a Singleton class for this purpose.  
+
+
+CRC Cards  
 
 Class <i>Client</i>  
 Responsibilities:   
