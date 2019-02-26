@@ -2,24 +2,21 @@ Design Pattern used - Chain of Responsibility Design and Singleton patterns
 
 Lab4 : CRC Cards
 
-Class Client
-Responsibilities : 
-	Sign up for a table
-	Accept or deny when table is ready
-	Maintain client details - name, phone, party size
+Class <i>Client</i>  
+Responsibilities:   
+	Sign up for a table   
+	Accept or deny when table is ready  
+	Maintain client details - name, phone, party size  
 
-Collaborators : 
-	WaitListMananger
-	AssignTable
+Collaborators:   
+	WaitListMananger 
 
-
-
-Class WaitlistManager
-Responsibilities: 
-	Maintain single instance of WaitlistManager
-	Add a Client to the back of the waiting list
-	Remove particular client from the waiting list
-	Provide size of next available table
+Class <i>WaitlistManager</i>  
+Responsibilities:   
+	Maintain single instance of WaitlistManager  
+	Add a Client to the back of the waiting list  
+	Remove particular client from the waiting list  
+	Provide size of next available table  
 
 Collaborators: 
 	AssignCurrent
@@ -27,29 +24,25 @@ Collaborators:
 	Client
 
 
-Class AssignCurrent
-Responsibilities:
-	Check if Client is accepting or denying available table
-	Get size of currently available table
-	Remove Client from waitlist 
-	Go to the next request Handler
+Class <i>AssignCurrent</i>  
+Responsibilities:  
+	Assign table to client at the top of the waitlist  
+	Call next handler in the chain  
 
-Collaborators: 
-	WaitlistManager
-	Client
+Collaborators:     
+	WaitlistManager  
+	Client  
 
 
 
-Class FindAndAssign
-Responsibilities:
-	Check if Client is accepting or denying available table
-	Find appropriate contender for currently available table
-	Get size of currently available table
-	Remove Client from waitlist 
+Class <i>FindAndAssign</i>  
+Responsibilities:  
+	Find appropriate client for the table
+	Assign table to that client  
 
-Collaborators: 
-	WaitlistManager
-	Client
+Collaborators:     
+	WaitlistManager  
+	Client  
 
 
 
