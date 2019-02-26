@@ -18,10 +18,10 @@ Responsibilities:
 	Remove particular client from the waiting list  
 	Provide size of next available table  
 
-Collaborators: 
-	AssignCurrent
-	FindAndAssign
-	Client
+Collaborators:   
+	AssignCurrent  
+	FindAndAssign  
+	Client  
 
 
 Class <i>AssignCurrent</i>  
@@ -37,12 +37,12 @@ Collaborators:
 
 Class <i>FindAndAssign</i>  
 Responsibilities:  
-	Find appropriate client for the table
-	Assign table to that client  
+	Find appropriate client for the table  
+	Assign table to that client    
 
-Collaborators:     
-	WaitlistManager  
-	Client  
+Collaborators:       
+	WaitlistManager    
+	Client    
 
 
 
