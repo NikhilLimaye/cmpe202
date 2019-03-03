@@ -11,7 +11,7 @@ Only a single instance of the Class WaitlistManager needs to be present.
 The Class WaitlistManager is a Singleton class for this purpose.  
 
 
-CRC Cards  
+# CRC Cards  
 
 ### Class <i>Client</i>  
 Responsibilities:   
