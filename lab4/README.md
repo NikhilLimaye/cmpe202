@@ -1,10 +1,10 @@
 # Design Patterns:
 ## 1. Chain of Responsibility   
 Multiple classes or "handlers" can handle a request for assigning a table. 
-The suitable client can either be at the top of the queue or somewhere down the queue if the first one is not suitable 
-Table Helper - Parent handler Interface  
-Class AssignCurrent - Concrete Handler 1  
-Class FindAndAssign - Concrete Handler 2  
+The suitable client can either be at the top of the queue or somewhere down the queue if the first one is not suitable  
++ Table Helper - Parent handler Interface  
++ Class AssignCurrent - Concrete Handler 1  
++ Class FindAndAssign - Concrete Handler 2  
 
 ## 2. Singleton  
 Only a single instance of the Class WaitlistManager needs to be present.  
