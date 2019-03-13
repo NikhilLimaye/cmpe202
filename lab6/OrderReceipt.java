@@ -37,7 +37,7 @@ public class OrderReceipt implements PrintingStrategy {
 					ArrayList<String> bottomBunToppings = o.getBottomBunToppings();
 					for(String temp : bottomBunToppings)
 					{
-						System.out.println("    -> | "+temp);
+						System.out.println("      -> | "+temp);
 					}
 					break;
 					
@@ -45,12 +45,12 @@ public class OrderReceipt implements PrintingStrategy {
 					ArrayList<String> topBunToppings = o.getTopBunToppings();
 					for(String temp : topBunToppings)
 					{
-						System.out.println("    "+temp);
+						System.out.println("      "+temp);
 					}
 					break;
 					
 				case "Meat" : 
-					System.out.println("    {{{{ "+o.getMeat()+" }}}}");
+					System.out.println("      {{{{ "+o.getMeat()+" }}}}");
 					break;				
 				
 				}				
