@@ -1,26 +1,21 @@
 package strategypattern;
-
-import java.time.*;
 import java.util.ArrayList;
 
 
 public class Order {
 	
 	String orderMain;
-	LocalDate date;
-	LocalTime time;
 	OrderItems items;
 	double price;
 	static PrintingStrategy ps;
 	ArrayList<String> orderRequests;
 	int quantity;
 	static ArrayList<Order> orders_all = new ArrayList<Order>();
-	public Order(String order, LocalDate date, LocalTime time, double price, int quantity )
+	
+	public Order(String order, double price, int quantity )
 	{		
 		this.quantity = quantity;
 		orderMain = order;
-		this.date = date;
-		this.time = time;
 		this.price = price;
 		items = new OrderItems();
 		orderRequests = new ArrayList<String>();	
@@ -37,10 +32,6 @@ public class Order {
 		orders_all.add(this);
 	}
 	
-	public LocalDate getDate()
-	{
-		return date;
-	}
 	
 	public String getComplexOrder()
 	{
