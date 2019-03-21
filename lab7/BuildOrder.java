@@ -22,14 +22,14 @@ public class BuildOrder {
         c_1.setOptions( co_1 ) ;
         c_1.wrapDecorator( b_1 ) ;
 
-        CheesePremium cp_1 = new CheesePremium("Premium Cheese Options");
-        String cop_1 = { "Danish Blue Cheese" };
+        PremiumCheese cp_1 = new PremiumCheese("Premium Cheese Options");
+        String[] cop_1 = { "Danish Blue Cheese" };
         cp_1.setOptions(cop_1);
         cp_1.wrapDecorator(c_1);
 
 
- 		Sauce s_1 = new Sauce( "Sauce Options" ) ;
-        String[] so_1 = { "Appricot Sauce" } ;
+        Sauce s_1 = new Sauce( "Sauce Options" ) ;
+        String[] so_1 = {  "Mayonnaise", "Thai Peanut Sauce"  } ;
         s_1.setOptions( so_1 ) ;
         s_1.wrapDecorator( cp_1 ) ;
 
@@ -54,8 +54,8 @@ public class BuildOrder {
        
 
         Sides sides_1 = new Sides( "Side Options" ) ;
-        String[] sides_1 = { "Shoestring Fries" } ;
-        sides_1.setOptions( sides_1 ) ;
+        String[] sides_1_options = { "Shoestring Fries" } ;
+        sides_1.setOptions( sides_1_options ) ;
         sides_1.wrapDecorator( bun_1) ;
         
         // Setup Custom Burger Ingredients
@@ -86,13 +86,13 @@ public class BuildOrder {
         c_2.setOptions( co_2 ) ;
         c_2.wrapDecorator( b_2 ) ;
 
-        CheesePremium cp_2 = new CheesePremium("Premium Cheese Options");
-        String cop_2 = { "Fresh Mozzarella" } ;
+        PremiumCheese cp_2 = new PremiumCheese("Premium Cheese Options");
+        String[] cop_2 = { "Fresh Mozzarella" } ;
         cp_2.setOptions(cop_2);
         cp_2.wrapDecorator(c_2);
 
 
- 		Sauce s_2 = new Sauce( "Sauce Options" ) ;
+        Sauce s_2 = new Sauce( "Sauce Options" ) ;
         String[] so_2 =  { "Habanero Salsa" } ;
         s_2.setOptions( so_2 ) ;
         s_2.wrapDecorator( cp_2 ) ;
@@ -118,25 +118,25 @@ public class BuildOrder {
        
 
         Sides sides_2 = new Sides( "Side Options" ) ;
-        String[] sides_2 = { "Shoestring Fries" } ;
-        sides_2.setOptions( sides_2 ) ;
+        String[] sides_2_options = { "Shoestring Fries" } ;
+        sides_2.setOptions( sides_2_options ) ;
         sides_2.wrapDecorator( bun_2 ) ;
         
         // Setup Custom Burger Ingredients
-        customBurger.setDecorator( sides_2 ) ;
-        customBurger.addChild( b_2 ) ; //burger
-        customBurger.addChild( c_2 ) ; //cheese
-        customBurger.addChild( cp_2 ); //premium cheese
-        customBurger.addChild( s_2 ) ; //sauce
-        customBurger.addChild( t_2 ) ; //toppings
-        customBurger.addChild( tp_2 ) ; //premium toppings
-        customBurger.addChild( bun_2 ) ; //bun
-        customBurger.addChild( sides_2 ) ; //sides
+        customBurger_2.setDecorator( sides_2 ) ;
+        customBurger_2.addChild( b_2 ) ; //burger
+        customBurger_2.addChild( c_2 ) ; //cheese
+        customBurger_2.addChild( cp_2 ); //premium cheese
+        customBurger_2.addChild( s_2 ) ; //sauce
+        customBurger_2.addChild( t_2 ) ; //toppings
+        customBurger_2.addChild( tp_2 ) ; //premium toppings
+        customBurger_2.addChild( bun_2 ) ; //bun
+        customBurger_2.addChild( sides_2 ) ; //sides
 
 
 
         // Add both Custom Burgers to the Order
-        order.addChild( customBurger );
+        order.addChild( customBurger_1 );
         order.addChild( customBurger_2 );
         return order ;
     }
