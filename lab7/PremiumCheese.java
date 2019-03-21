@@ -1,3 +1,7 @@
+/**
+* New Class - Premium Cheese
+*/
+
 public class PremiumCheese extends LeafDecorator
 {
     private String[] options ;

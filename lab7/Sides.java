@@ -1,3 +1,7 @@
+/**
+* New Class - Sides
+*/
+
 public class Sides extends LeafDecorator
 {
     // instance variables - replace the example below with your own

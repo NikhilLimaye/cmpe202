@@ -1,3 +1,7 @@
+/**
+* New Class - Bun
+*/
+
 public class Bun extends LeafDecorator
 {
     private String[] options ;

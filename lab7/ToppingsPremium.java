@@ -1,3 +1,7 @@
+/**
+* New Class - Premium Toppings
+*/
+
 public class ToppingsPremium extends LeafDecorator
 {
     private String[] options ;
