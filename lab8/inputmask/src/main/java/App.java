@@ -39,7 +39,10 @@ public class App {
     }
 
     public void key(String ch) {
-        count++;
+    	if(ch.equals("X") || ch.equals("x"))
+    		count--;
+    	else
+    		count++;
         screen.key(ch, count);
     }
 
