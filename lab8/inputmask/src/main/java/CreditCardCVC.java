@@ -14,7 +14,7 @@ public class CreditCardCVC implements IDisplayComponent, IKeyEventHandler
 		if ( cvc.equals("") )
 			return "[123]" + "  " ;
 		else
-			return "[" + cvc + "]" + "  " ;
+			return cvc;
 	}	
 
 	public void key(String ch, int cnt) {
