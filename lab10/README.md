@@ -65,14 +65,14 @@ Code Execution using Feature IDE v3.0.0 in Eclipse 4.5.2 Mars using Java 8 SDK.
 
 ![](output/HelloWonderfulWorld.PNG)
 
-1. Hello Beautiful World
+3. Hello Beautiful World
 
 ![](output/HelloBeautifulWorld.PNG)
 
-1. Goodbye World
+4. Goodbye World
 
 ![](output/GoodbyeWorld.PNG)
 
-1. Goodbye Terrible World
+5. Goodbye Terrible World
 
 ![](output/GoodbyeTerribleWorld.PNG)
