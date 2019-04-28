@@ -14,7 +14,6 @@ Code Execution using Feature IDE v3.0.0 in Eclipse 4.5.2 Mars using Java 8 SDK.
 
 ## Screenshots - 
 --------------------------------------------------------------------------------------------
-
 ### Gumball Machine V1
 --------------------------------------------------------------------------------------------
 
@@ -31,7 +30,7 @@ Code Execution using Feature IDE v3.0.0 in Eclipse 4.5.2 Mars using Java 8 SDK.
 ![](output/v1COINS50.PNG)
 
 
-
+--------------------------------------------------------------------------------------------
 ### Gumball Machine V2
 --------------------------------------------------------------------------------------------
 
@@ -54,10 +53,26 @@ Code Execution using Feature IDE v3.0.0 in Eclipse 4.5.2 Mars using Java 8 SDK.
 
 ![](output/v2Slot50.PNG)
 
-
+--------------------------------------------------------------------------------------------
 ### GoodbyeWorld
 --------------------------------------------------------------------------------------------
 
 1. Hello World
 
 ![](output/HelloWorld.PNG)
+
+2. Hello Wonderful World
+
+![](output/HelloWonderfulWorld.PNG)
+
+1. Hello Beautiful World
+
+![](output/HelloBeautifulWorld.PNG)
+
+1. Goodbye World
+
+![](output/GoodbyeWorld.PNG)
+
+1. Goodbye Terrible World
+
+![](output/GoodbyeTerribleWorld.PNG)
